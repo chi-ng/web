@@ -1,0 +1,177 @@
+<html>
+	<header>
+
+		<title> Product Page  </title>
+		<!-- navi on top -->
+		<ul class="navi-top">
+			<li style="margin-right: 30px"> <a href=""> CHANGE COUNTRY  </a> </li>
+
+		<!-- search bar -->
+			<div style="float:right" class ="search-container">
+				<form action="/action_page.php">
+      				<input type="text" placeholder="Search..." name="search">
+     				 <button type="submit"> SUBMIT </button>
+    			</form>
+			</div>
+			<li style="float:right; margin-right: 30px"> <a href="login.html"> LOGIN/ SIGN UP </a> </li>
+		</ul>
+	<br>
+	<br>
+	<!-- logo  -->
+		<a href="homepage-template.html"> <img src="images/logo.png" alt="logo" class="logo"> </a>
+
+		<link rel="stylesheet" type="text/css" href="shoes.css">
+		<link rel="stylesheet" type="text/css" href="jquery.exzoom.css">
+
+	<br>
+
+	</header>
+	
+	<body>
+
+	<!-- navigation menu -->
+	<div class="navbar">
+	  			<a href="homepage-template.html" > HOME </a>
+	  				<div class="dropdown">
+	    				<button class="dropbtn" id="active"> NEW ARRIVALS </button>
+	    					<div class="dropdown-content">
+							    <a href="#"> MEN </a>
+							    <a href="new-arrivals-women.html"> WOMEN </a>
+	    					</div>
+	  				</div>
+	  				<div class="dropdown">
+	    				<button class="dropbtn"> MEN </button>
+	    					<div class="dropdown-content">
+							    <a href="shirtspage.html"> TOPS </a>
+							    <a href="#"> BOTTOMS </a>
+							    <a href="#"> SHOES </a>
+							    <a href="#"> ACCESSORIES </a>
+	    					</div>
+	  				</div>
+	  				<div class="dropdown">
+	    				<button class="dropbtn"> WOMEN </button>
+	    					<div class="dropdown-content">
+							    <a href="#"> TOPS </a>
+							    <a href="#"> BOTTOMS </a>
+							    <a href="#"> SHOES </a>
+							    <a href="#"> ACCESSORIES </a>
+	    					</div>
+	  				</div>
+	  				<div class="dropdown">
+	    				<button class="dropbtn" > SALES </button>
+	    					<div class="dropdown-content">
+							    <a href="#"> MEN </a>
+							    <a href="#"> WOMEN </a>
+	    					</div>
+	  				</div>
+	  			<a href="aboutus.html" > ABOUT US </a>
+	  			<a href="basket.html" style="float: right" > BASKET </a>
+			</div>
+	<br>
+
+<!-- sales images-->
+	 <img src="images/new-arrivals3.png" alt="ad" class="title" > <br>
+	 <hr/>
+
+
+
+
+		<div class="exzoom" id="exzoom">
+  <!-- Images -->
+			  <div class="exzoom_img_box">
+			    <ul class='exzoom_img_ul'>
+			      <li><img src="images/product3-img/hoodie1.jpg"/></li>
+			      <li><img src="images/product3-img/hoodie2.jpg"/></li>
+			      <li><img src="images/product3-img/hoodie3.jpg"/></li>
+			      <li><img src="images/product3-img/hoodie4.jpg"/></li>
+			      <li><img src="images/product3-img/hoodie5.jpg"/></li>
+			      <li><img src="images/product3-img/hoodie6.jpg"/></li>
+
+
+			    </ul>
+			  </div>
+			  <!-- <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a> Nav-->
+				  <div class="exzoom_nav"></div>
+				  <!-- Nav Buttons -->
+
+				</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="jquery.exzoom.js"></script>
+		<script type="text/javascript">
+					$(function(){
+
+							$("#exzoom").exzoom({
+								// options here
+							});
+
+					});
+
+		</script>
+
+<!-- create box for product to select size and quantity --> 
+			<div class="labe3">HOME/SALES/WOMENS/SHOES</div>
+
+			<div class="class1">
+				<div class="description"> <h3> Women's Be Seen Terry Crop Hoodie</h3></div> <br>
+				<div class="price"> &#163; 65.00</div> <br>
+				<label> Size: </label>
+				  <select>
+					  <option>Select Size</option>
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+					</select> <br> <br>
+
+				<label> Quantity: </label>
+				  <select>
+					  <option>Select Quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select> <br> <br>
+
+				<!-- free delivery image  --> 
+					<div class="free">
+							<p>Free delivery on all order </p>
+					</div>
+
+					<div class="delivery">
+						<img src="images/product1-img/deliveryicon.png">
+					</div> 
+
+					<div class="wrapper">
+						<br><br><br><br>
+						<button class="button">ADD TO BASKET</button>
+					</div>
+				
+			</div>
+
+				<div class="pdesc">
+						<h2>Product Description</h2>
+
+						<li>UA HOVR technology provides zero gravity feel to maintain energy return that helps eliminate impact step after step</li>
+						<br><li>Compression mesh Energy Web contains & moulds UA HOVR foam to give back the energy you put in</li>
+						<br><li>Upper dries fast & provides a breathable, compression-like fit that delivers lightweight directional strength & unmatched comfort to help you go the distance</li>
+						<br><li>Ventilated midfoot panel increases breathability</li><br>
+						<li>Unique tongue construction is attached to the footbed by stretchable support wings to maintain a snug fit throughout the foot</li><br>
+						<li>External TPU heel counter for additional support & structure</li><br>
+						<li>Removable, anti-microbial Ortholite sockliner moulds to the foot for customised comfort & cushion</li><br>
+						<li>Blown rubber under the forefoot is lightweight yet incredibly responsive</li><br>
+						<li>High-abrasion rubber placed under the heel to help absorb ground contact</li><br>
+						<li>Imported</li>
+
+
+				</div>
+
+				<div class="returns">
+					<h2>Return Policy</h2>
+						<p>If you are not 100% satisfied with an item, you can return it for free within 50 days of having received your order. 
+							<br>After 50 days, you will no longer be able to return your order. 
+							<br>Make sure to include the return packing slip. </p><br> <br> <br>
+			 </div>
+			 
+	</body>
+
+	
+	
+</html>

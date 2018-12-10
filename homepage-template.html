@@ -1,0 +1,248 @@
+<html> 
+	<header>
+		<title> Home page </title>
+
+<!-- navi on top --> 
+		<ul class="navi-top">
+			<li style="margin-right: 30px"> <a href=""> CHANGE COUNTRY  </a> </li> 
+			
+
+			
+
+<!-- search bar --> 
+			<div style="float:right" class ="search-container">
+				<form action="/action_page.php">
+      				<input type="text" placeholder="Search..." name="search">
+     				 <button type="submit"> SUBMIT </button>
+    			</form>
+			</div>
+			<li style="float:right; margin-right: 30px"> <a href="login.html"> LOGIN/ SIGN UP </a> </li>
+		</ul>
+	<br> 
+	<br>
+
+<!-- logo  --> 
+		<a href="homepage-template.html"> <img src="images/logo.png" alt="logo" class="logo"> </a>
+		<link rel="stylesheet" type="text/css" href="homepage-template.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<br> 
+		
+	</header>
+
+<!-- navigation menu --> 
+
+	<body id="night-mode">
+			<div class="navbar">
+	  			<a href="homepage-template.html"  class="active"> HOME </a>
+	  				<div class="dropdown">
+	    				<button class="dropbtn"> NEW ARRIVALS </button>
+	    					<div class="dropdown-content">
+							    <a href="#"> MEN </a>
+							    <a href="new-arrivals-women.html"> WOMEN </a>
+	    					</div>
+	  				</div> 
+	  				<div class="dropdown">
+	    				<button class="dropbtn"> MEN </button>
+	    					<div class="dropdown-content">
+							    <a href="shirtspage.html"> TOPS </a>
+							    <a href="#"> BOTTOMS </a>
+							    <a href="#"> SHOES </a>
+							    <a href="#"> ACCESSORIES </a>
+	    					</div>
+	  				</div> 
+	  				<div class="dropdown">
+	    				<button class="dropbtn"> WOMEN </button>
+	    					<div class="dropdown-content">
+							    <a href="#"> TOPS </a>
+							    <a href="#"> BOTTOMS </a>
+							    <a href="#"> SHOES </a>
+							    <a href="#"> ACCESSORIES </a>
+	    					</div>
+	  				</div> 
+	  				<div class="dropdown">
+	    				<button class="dropbtn"> SALES </button>
+	    					<div class="dropdown-content">
+							    <a href="#"> MEN </a>
+							    <a href="#"> WOMEN </a>
+	    					</div>
+	  				</div> 
+	  			<a href="aboutus.html"> ABOUT US </a>
+	  			<a href="basket.html" style="float: right"> BASKET </a>
+			</div> 
+	<br> 
+<!-- advert image --> 
+	<a href=""> <img src="images/ad.png" alt="ad" class="ad"> </a> <br>
+
+<!-- slideshow images--> 
+	<div class ="slideshow-div"> 
+		<div class ="slide fade"> <img src="images/welcome.png" style="width: 100%; height: 60%"> </div> <!-- slideshow images 1--> 
+		<div class ="slide fade"> <img src="images/sales.png" style="width: 100%; height: 60%"> </div> <!-- slideshow images 2--> 
+		<div class ="slide fade"> <a href="new-arrivals-women.html"> <img src="images/women-banner.png" style="width: 100%; height: 60%"> </a> </div> <!-- slideshow images 2--> 
+		<div class ="slide fade"> <img src="images/men-banner.png" style="width: 100%; height: 60%"> </div> <!-- slideshow images 2--> 
+	</div>
+	<br> 
+
+<!-- dot in middle--> 
+	<div style="text-align: center"> 
+		<span class="dot"> </span> <!-- using <span> for inline elements--> 
+		<span class="dot"> </span>
+		<span class="dot"> </span>
+		<span class="dot"> </span>
+	</div>
+
+<!-- JS for slide image --> 
+	<script type="text/javascript">
+			var slideIndex = 0;
+			showSlides();
+			function showSlides() {
+				var i; 
+				var slides = document.getElementsByClassName ("slide");
+				var dots = document.getElementsByClassName ("dot");
+				for (i =0; i< slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+    			for (i = 0; i < dots.length; i++) {
+			        dots[i].className = dots[i].className.replace(" active", "");
+			    }
+			    slides[slideIndex-1].style.display = "block";  
+			    dots[slideIndex-1].className += " active";
+			    setTimeout(showSlides, 3000); // Change image every 3 seconds
+			}
+
+
+		</script>
+
+<!-- new arrivals homepage --> 
+		<img src="images/new-arrivals3.png" alt="ad" class="title"> <br>
+
+
+<!-- create gallery images of new arrivals products--> 
+<container> 
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/a1.jp2"> </a>
+			<div class="description"> Unisex Suede/Mesh Lifestyle Shoes </div>
+			<div class="price"> &#163; 100.00 </div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/b1.jp2"> </a>
+			<div class="description"> Men's Be Seen Sherpa Swacket </div>
+			<div class="price"> &#163; 120.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/c1.jp2"> </a>
+			<div class="description"> Men's Sportstyle Pique Trousers </div>
+			<div class="price"> &#163; 36.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/d1.jp2"> </a>
+			<div class="description"> Men's Blitzing 3.0 Cap Hat</div>
+			<div class="price"> &#163; 18.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/e1.jp2"> </a>
+			<div class="description"> Men's Project Blue 5 Backpack </div>
+			<div class="price"> &#163; 20.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/f1.jp2"> </a>
+			<div class="description"> Men's Unstoppable Windbreaker </div>
+			<div class="price"> &#163; 80.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/g1.jp2"> </a>
+			<div class="description"> Women's Be Seen Terry Crop Hoodie </div>
+			<div class="price"> &#163; 65.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/h1.jp2"> </a>
+			<div class="description"> Women's HOVR Sonic Running Shoes </div>
+			<div class="price"> &#163; 100.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/i1.jp2"> </a>
+			<div class="description"> Women's Armour Fly Fast Graphic Crop </div>
+			<div class="price"> &#163; 50.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/j1.jp2"> </a>
+			<div class="description"> Women's Double Knit Hoodie </div>
+			<div class="price"> &#163; 42.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/k1.jp2"> </a>
+			<div class="description"> Women's Graphic Pom Beanie </div>
+			<div class="price"> &#163; 23.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/l1.jp2"> </a>
+			<div class="description"> Women's Heather Print Sports Bra </div>
+			<div class="price"> &#163; 26.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/m1.jp2"> </a>
+			<div class="description"> Women's Be Seen Sherpa Bomber Jacket</div>
+			<div class="price"> &#163; 90.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/n1.jp2"> </a>
+			<div class="description"> Women's HOVR CGR Mid NC Running Shoes </div>
+			<div class="price"> &#163; 115.00</div>
+		</div>
+
+		<div class="gallery">
+			<a href=""> <img src="images/home-page/o1.jp2"> </a>
+			<div class="description"> Women's Breathelux Printed Leggings </div>
+			<div class="price"> &#163; 125.00 </div>
+		</div>
+
+		
+	</container>
+	
+
+<!-- create shop men/ women image button --> 
+		<div class="label1">
+			<a href=""> <img src="images/men-label.png"> </a>
+		</div>
+		<br>
+
+		<div class="label1">
+			<a href="new-arrivals-women.html"> <img src="images/women-label.png"> </a>
+		</div>
+	<br>
+	<br>
+
+
+	</body>
+
+
+	<footer>
+		<br>
+		<ul class="foot">
+			<li> <a href=""> ABOUT US </a></li>
+			<li> <a href=""> CONTACT US </a></li>
+			<li> <a href=""> RETURN AND REFUND POLICY </a></li>
+		</ul>
+		<p style="color: white"> FOLLOW US </p> 
+			<a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"> </a>
+			<a href="https://twitter.com" class="fa fa-twitter" target="_blank">  </a>
+			<a href="https://plus.google.com" class="fa fa-google" target="_blank"> </a>
+			<a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"> </a>
+
+			<br> <br>
+	</footer>
+</html> 
