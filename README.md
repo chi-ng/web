@@ -3,7 +3,7 @@ Website design and authoring
 Author Tri, Lester, Wilson and Lewis
 
 Page that are available to view
-1. Home page <a href="homepage-template.html"> </a> 
+1. Home page 
 2. New arrival/ Women
 3. Men/ Tops
 4. About us
